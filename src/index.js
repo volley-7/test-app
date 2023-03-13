@@ -31,7 +31,7 @@ app.use(userRouter);
 
 app.use(taskRouter);
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
    res.send("Home Page : Hello World");
  });
 
