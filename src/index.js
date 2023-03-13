@@ -31,6 +31,10 @@ app.use(userRouter);
 
 app.use(taskRouter);
 
+app.post('/', (req, res) => {
+   res.send("Home Page : Hello World");
+ });
+
 app.listen(port, () => {
    console.log("Port is listening on " + port);
 });
